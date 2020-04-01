@@ -10,14 +10,14 @@ session = Session()Base = declarative_base()class Compputer(Base):    __tablenam
     amount_of_ram = Column(String)
     maximum_ram = Column(String)
     hard_drive_space = Column(String)
-    form-factor = Column(String)
+    form_factor = Column(String)
     
-    def __init__(self, hard_drive_type, processor, amount_of_ram, maximum_ram, hard_drive_space, form-factor):
+    def __init__(self, hard_drive_type, processor, amount_of_ram, maximum_ram, hard_drive_space, form_factor):
         self.hard_drive_type = hard_drive_type
         self.processor = processor
         self.amount_of_ram = amount_of_ram
         self.hard_drive_space = hard_drive_space
-        self.form-factor = form-factor
+        self.form_factor = form_factor
         
         #Lists all the compputers that have been added or saved
         def list_computers(self):
@@ -38,7 +38,8 @@ session = Session()Base = declarative_base()class Compputer(Base):    __tablenam
         def save_computers(self):
             session.add(self)
 
-        session.commit()    def __repr__(self):
+        session.commit()
+        def __repr__(self):
         return f"Recruit: {self.email}"#Making migrations / Creating the table
 
 
