@@ -9,7 +9,8 @@ services:
     volumes:
       - ./gitignore/postgresql:/var/lib/postgresql/data
     ports:
-      - 5432:5432  adminer:
+      - 5432:5432  
+adminer:
     image: adminer
     restart: always
     ports:
