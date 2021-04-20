@@ -40,7 +40,7 @@ pluggy==0.13.1
 postgres==3.0.0
 psycopg2-binary==2.8.4
 psycopg2-pool==1.1
-py==1.8.1
+py==1.10.0
 pycparser==2.20
 pycrypto==2.6.1
 PyGObject==3.32.0
